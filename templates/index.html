@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>App Web Interactive - Fabien</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Mon App Web Interactive</h1>
+        <p>Test de formulaire et de Backend avec Flask</p>
+
+        <!-- Formulaire qui envoie les données en POST vers la route /submit -->
+        <form action="/submit" method="POST">
+            <input type="text" name="nom" placeholder="Tape ton texte ici..." required>
+            <br><br>
+            <button type="submit" class="btn">Envoyer au Backend</button>
+        </form>
+    </div>
+</body>
+</html>

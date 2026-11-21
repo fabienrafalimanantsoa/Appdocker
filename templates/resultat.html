@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultat Backend</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Données reçues par le Backend !</h1>
+        <p>Tu as saisi : <strong>{{ data }}</strong></p>
+        <br>
+        <a href="/" class="btn" style="text-decoration: none; color: white;">Retour à l'accueil</a>
+    </div>
+</body>
+</html>
